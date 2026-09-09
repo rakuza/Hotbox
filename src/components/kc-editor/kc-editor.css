@@ -1,0 +1,7 @@
+@layer component {
+    @scope (kc-editor,[is="kc-editor"]){
+        :scope{
+            
+        }
+    }
+}

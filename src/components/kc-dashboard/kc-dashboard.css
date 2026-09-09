@@ -1,0 +1,11 @@
+@layer component {
+    @scope (kc-dashboard, section[is="kc-dashboard"]){
+        :scope{
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+    }
+}

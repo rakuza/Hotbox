@@ -1,0 +1,89 @@
+@layer reset, default, theme, page;
+
+@layer reset{
+    *:not(dialog) {
+        margin:0;
+        padding:0;
+    }
+
+    p{
+        text-wrap: pretty;
+    }
+
+    input{
+        field-sizing: content;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            interpolate-size: allow-keywords;
+        }
+    }
+
+    html,body{
+        -webkit-font-smoothing: antialiased;
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+        line-height: calc(12px * 1.5);
+    }
+
+    body {
+        min-block-size: 100svb;
+        min-inline-size: 300px;
+    }
+
+    img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    }
+
+    a{
+        color:inherit;
+    }
+
+    textarea {
+		resize: vertical;
+	}
+
+    :disabled, .disabled{
+        cursor: not-allowed;
+    }
+
+    svg{
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    button{
+         -webkit-appearance: none;
+         appearance: none;
+        border-radius: 0;
+        text-align: inherit;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        color: inherit;
+        font: inherit;
+    }
+
+    menu{
+        list-style: none;
+    }
+}
+

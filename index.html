@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kiln-controller</title>
+    <script type="module" blocking src="./src/init.ts"></script>
+  <script type="module" blocking="render" src="./src/main.ts"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <dialog is="kc-editor"></dialog>
+  <header is="kc-header">
+  </header>
+  <div class="kc-viewport">
+    <div class="kc-viewport__c1">
+      <section is="kc-manual"></section>
+      <section is="kc-quickselect"></section>
+    </div>
+    <div class="kc-viewport__c2">
+      <section is="kc-dashboard"></section>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@layer component {
+    @scope(kc-manual, section[is="kc-manual"]) {
+        :scope {
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kc-manual__mode {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 6px;
+
+            button {
+                background-color: var(--kc-clr-primative-bone);
+                padding: 10px;
+                border-radius: 3px;
+            }
+
+            .kc-manual__profile--selected {
+                background-color: var(--kc-clr-primative-rusty-spice);
+
+            }
+
+            .kc-manual__manual--selected {
+                background-color: var(--kc-clr-primative-faded-copper);
+            }
+        }
+
+        .kc-manual__profile-pane {
+            display: none;
+
+            &.kc-manual__profile-pane--selected {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .kc-manual__manual-pane {
+            display: none;
+
+            &.kc-manual__manual-pane--selected {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+    }
+}
