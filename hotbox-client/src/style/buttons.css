@@ -1,0 +1,79 @@
+.kc-btn{
+
+  font-family: var(--kc-typo-btn-ff);
+  font-size: var(--kc-typo-btn-fs);
+  font-weight: var(--kc-typo-btn-fw);
+  font-style: var(--kc-typo-btn-fy);
+  line-height: var(--kc-typo-btn-lh);
+  letter-spacing: var(--kc-typo-btn-ls);
+
+  padding-block: var(--kc-spacing-sm);
+  padding-inline: var(--kc-spacing-md);
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: var(--kc-radius-item);
+
+  &.kc-btn--narrow{
+
+  }
+
+  &.kc-btn--important{
+    padding-inline: var(--kc-spacing-xl);
+  }
+
+  &.kc-btn--primary{
+
+  }
+
+  &.kc-btn--secondary{
+    border-color: var(--kc-clr-button-secondary-border-base);
+    background-color: var(--kc-clr-button-secondary-bg-base);
+    color: var(--kc-clr-button-secondary-text-base);
+
+    @media(hover:hover){
+      &:hover{
+        border-color: var(--kc-clr-button-secondary-border-hover);
+        background-color: var(--kc-clr-button-secondary-bg-hover);
+        color: var(--kc-clr-button-secondary-text-hover);
+      }
+
+      &:active{
+        border-color: var(--kc-clr-button-secondary-border-active);
+        background-color: var(--kc-clr-button-secondary-bg-active);
+        color: var(--kc-clr-button-secondary-text-active);
+      }
+    }
+  }
+
+  &.kc-btn--destructive{
+    border-color: var(--kc-clr-button-destructive-border-base);
+    background-color: var(--kc-clr-button-destructive-bg-base);
+    color: var(--kc-clr-button-destructive-text-base);
+
+    @media(hover:hover){
+      &:hover{
+        border-color: var(--kc-clr-button-destructive-border-hover);
+        background-color: var(--kc-clr-button-destructive-bg-hover);
+        color: var(--kc-clr-button-destructive-text-hover);
+      }
+
+      &:active{
+        border-color: var(--kc-clr-button-destructive-border-active);
+        background-color: var(--kc-clr-button-destructive-bg-active);
+        color: var(--kc-clr-button-destructive-text-active);
+      }
+    }
+  }
+
+  &.kc-btn--tertiary{
+
+  }
+
+  &.kc-btn--link{
+
+  }
+
+}
+

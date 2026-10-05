@@ -1,0 +1,227 @@
+@layer theme {
+  :root {
+
+    /**********************
+      Palette
+    **********************/
+    --kc-clr-palette-faded-copper: #A77E58;
+    --kc-clr-palette-rusty-spice: #BA3F1D;
+    --kc-clr-palette-steel-blue: #80A1C1;
+    --kc-clr-palette-shamrock-green: #009E60;
+    --kc-clr-palette-vermillion: #E34234;
+    --kc-clr-palette-neutral: #d6ccc2;
+    --kc-clr-palette-white: #ffffff;
+    --kc-clr-palette-black: #000000;
+
+    /**********************
+      Primatives
+    **********************/
+
+    --kc-clr-primatives-primary-100: hsl(from var(--kc-clr-palette-steel-blue) h s 95%);
+    --kc-clr-primatives-primary-200: hsl(from var(--kc-clr-palette-steel-blue) h s 85%);
+    --kc-clr-primatives-primary-300: hsl(from var(--kc-clr-palette-steel-blue) h s 75%);
+    --kc-clr-primatives-primary-400: hsl(from var(--kc-clr-palette-steel-blue) h s 65%);
+    --kc-clr-primatives-primary-500: hsl(from var(--kc-clr-palette-steel-blue) h s 50%);
+    --kc-clr-primatives-primary-600: hsl(from var(--kc-clr-palette-steel-blue) h s 35%);
+    --kc-clr-primatives-primary-700: hsl(from var(--kc-clr-palette-steel-blue) h s 25%);
+    --kc-clr-primatives-primary-800: hsl(from var(--kc-clr-palette-steel-blue) h s 15%);
+    --kc-clr-primatives-primary-900: hsl(from var(--kc-clr-palette-steel-blue) h s 5%);
+
+    --kc-clr-primatives-secondary-100: hsl(from var(--kc-clr-palette-rusty-spice) h s 95%);
+    --kc-clr-primatives-secondary-200: hsl(from var(--kc-clr-palette-rusty-spice) h s 90%);
+    --kc-clr-primatives-secondary-300: hsl(from var(--kc-clr-palette-rusty-spice) h s 75%);
+    --kc-clr-primatives-secondary-400: hsl(from var(--kc-clr-palette-rusty-spice) h s 65%);
+    --kc-clr-primatives-secondary-500: hsl(from var(--kc-clr-palette-rusty-spice) h s 50%);
+    --kc-clr-primatives-secondary-600: hsl(from var(--kc-clr-palette-rusty-spice) h s 35%);
+    --kc-clr-primatives-secondary-700: hsl(from var(--kc-clr-palette-rusty-spice) h s 25%);
+    --kc-clr-primatives-secondary-800: hsl(from var(--kc-clr-palette-rusty-spice) h s 15%);
+    --kc-clr-primatives-secondary-900: hsl(from var(--kc-clr-palette-rusty-spice) h s 5%);
+
+    --kc-clr-primatives-tertary-100: hsl(from var(--kc-clr-palette-faded-copper) h s 95%);
+    --kc-clr-primatives-tertary-200: hsl(from var(--kc-clr-palette-faded-copper) h s 90%);
+    --kc-clr-primatives-tertary-300: hsl(from var(--kc-clr-palette-faded-copper) h s 75%);
+    --kc-clr-primatives-tertary-400: hsl(from var(--kc-clr-palette-faded-copper) h s 65%);
+    --kc-clr-primatives-tertary-500: hsl(from var(--kc-clr-palette-faded-copper) h s 50%);
+    --kc-clr-primatives-tertary-600: hsl(from var(--kc-clr-palette-faded-copper) h s 35%);
+    --kc-clr-primatives-tertary-700: hsl(from var(--kc-clr-palette-faded-copper) h s 25%);
+    --kc-clr-primatives-tertary-800: hsl(from var(--kc-clr-palette-faded-copper) h s 15%);
+    --kc-clr-primatives-tertary-900: hsl(from var(--kc-clr-palette-faded-copper) h s 5%);
+
+    --kc-clr-primatives-success-100: hsl(from var(--kc-clr-palette-shamrock-green) h s 95%);
+    --kc-clr-primatives-success-200: hsl(from var(--kc-clr-palette-shamrock-green) h s 85%);
+    --kc-clr-primatives-success-300: hsl(from var(--kc-clr-palette-shamrock-green) h s 75%);
+    --kc-clr-primatives-success-400: hsl(from var(--kc-clr-palette-shamrock-green) h s 65%);
+    --kc-clr-primatives-success-500: hsl(from var(--kc-clr-palette-shamrock-green) h s 50%);
+    --kc-clr-primatives-success-600: hsl(from var(--kc-clr-palette-shamrock-green) h s 35%);
+    --kc-clr-primatives-success-700: hsl(from var(--kc-clr-palette-shamrock-green) h s 25%);
+    --kc-clr-primatives-success-800: hsl(from var(--kc-clr-palette-shamrock-green) h s 15%);
+    --kc-clr-primatives-success-900: hsl(from var(--kc-clr-palette-shamrock-green) h s 5%);
+
+    --kc-clr-primatives-error-100: hsl(from var(--kc-clr-palette-vermillion) h s 95%);
+    --kc-clr-primatives-error-200: hsl(from var(--kc-clr-palette-vermillion) h s 85%);
+    --kc-clr-primatives-error-300: hsl(from var(--kc-clr-palette-vermillion) h s 75%);
+    --kc-clr-primatives-error-400: hsl(from var(--kc-clr-palette-vermillion) h s 65%);
+    --kc-clr-primatives-error-500: hsl(from var(--kc-clr-palette-vermillion) h s 50%);
+    --kc-clr-primatives-error-600: hsl(from var(--kc-clr-palette-vermillion) h s 35%);
+    --kc-clr-primatives-error-700: hsl(from var(--kc-clr-palette-vermillion) h s 25%);
+    --kc-clr-primatives-error-800: hsl(from var(--kc-clr-palette-vermillion) h s 15%);
+    --kc-clr-primatives-error-900: hsl(from var(--kc-clr-palette-vermillion) h s 5%);
+
+    --kc-clr-primatives-neutral-100: hsl(from var(--kc-clr-palette-neutral) h s 98%);
+    --kc-clr-primatives-neutral-200: hsl(from var(--kc-clr-palette-neutral) h s 95%);
+    --kc-clr-primatives-neutral-300: hsl(from var(--kc-clr-palette-neutral) h s 75%);
+    --kc-clr-primatives-neutral-400: hsl(from var(--kc-clr-palette-neutral) h s 65%);
+    --kc-clr-primatives-neutral-500: hsl(from var(--kc-clr-palette-neutral) h s 50%);
+    --kc-clr-primatives-neutral-600: hsl(from var(--kc-clr-palette-neutral) h s 35%);
+    --kc-clr-primatives-neutral-700: hsl(from var(--kc-clr-palette-neutral) h s 25%);
+    --kc-clr-primatives-neutral-800: hsl(from var(--kc-clr-palette-neutral) h s 15%);
+    --kc-clr-primatives-neutral-900: hsl(from var(--kc-clr-palette-neutral) h s 5%);
+
+    /**********************
+    Surfaces
+    **********************/
+
+    --kc-clr-surface-base: var(--kc-clr-primatives-neutral-200);
+    --kc-clr-surface-base-alt: var(--kc-clr-primatives-neutral-100);
+    --kc-clr-surface-base-hover: var(--kc-clr-primatives-tertary-400);
+    --kc-clr-surface-base-active: var(--kc-clr-primatives-tertary-500);
+    --kc-clr-surface-brand: var(--kc-clr-primatives-secondary-700);
+    --kc-clr-surface-brand-alt: var(--kc-clr-primatives-secondary-800);
+
+    /**********************
+    Border
+    **********************/
+
+    --kc-clr-border-base: var(--kc-clr-primatives-neutral-300);
+
+    /**********************
+    Button
+    **********************/
+    --kc-clr-button-primary-bg: var(--kc-clr-primatives-primary-500);
+
+    --kc-clr-button-secondary-bg-base: var(--kc-clr-primatives-primary-100);
+    --kc-clr-button-secondary-bg-active: var(--kc-clr-primatives-primary-300);
+    --kc-clr-button-secondary-bg-hover: var(--kc-clr-primatives-primary-200);
+    --kc-clr-button-secondary-border-base: var(--kc-clr-primatives-primary-500);
+    --kc-clr-button-secondary-border-active: var(--kc-clr-primatives-primary-500);
+    --kc-clr-button-secondary-border-hover: var(--kc-clr-primatives-primary-500);
+    --kc-clr-button-secondary-text-base: var(--kc-clr-primatives-primary-900);
+    --kc-clr-button-secondary-text-active: var(--kc-clr-primatives-primary-900);
+    --kc-clr-button-secondary-text-hover: var(--kc-clr-primatives-primary-900);
+
+    --kc-clr-button-destructive-bg-base: var(--kc-clr-primatives-error-200);
+    --kc-clr-button-destructive-bg-active: var(--kc-clr-primatives-error-500);
+    --kc-clr-button-destructive-bg-hover: var(--kc-clr-primatives-error-400);
+    --kc-clr-button-destructive-border-base: var(--kc-clr-primatives-error-500);
+    --kc-clr-button-destructive-border-active: var(--kc-clr-primatives-error-500);
+    --kc-clr-button-destructive-border-hover: var(--kc-clr-primatives-error-500);
+    --kc-clr-button-destructive-text-base: var(--kc-clr-primatives-primary-900);
+    --kc-clr-button-destructive-text-active: var(--kc-clr-primatives-primary-900);
+    --kc-clr-button-destructive-text-hover: var(--kc-clr-primatives-primary-900);
+
+    /**********************
+    Radius
+    **********************/
+    --kc-radius-panel: 6px;
+    --kc-radius-item: 4px;
+    --kc-radius-round: 9999999px;
+
+    /**********************
+    Spacing
+    **********************/
+    --kc-spacing-xs: 2px;
+    --kc-spacing-sm: 4px;
+    /* vertical spacing between items */
+    --kc-spacing-md: 8px;
+    /* horizontal spacing between items */
+    --kc-spacing-lg: 14px;
+    /* Panel Gap */
+    --kc-spacing-xl: 24px;
+    --kc-spacing-xxl: 48px;
+    --kc-spacing-xxxl: 96px;
+
+    /**********************
+    Typography
+    **********************/
+
+    --kc-clr-typo-primary: var(--kc-clr-primatives-primary-900);
+    --kc-clr-typo-inverse: var(--kc-clr-primatives-neutral-100);
+
+    --kc-typo-section-heading-ff: "Manrope";
+    --kc-typo-section-heading-fw: 600;
+    --kc-typo-section-heading-fs: 20px;
+    --kc-typo-section-heading-fy: normal;
+    --kc-typo-section-heading-lh: normal;
+    --kc-typo-section-heading-ls: normal;
+
+    --kc-typo-label-ff: "Manrope";
+    --kc-typo-label-fw: 600;
+    --kc-typo-label-fs: 14px;
+    --kc-typo-label-fy: normal;
+    --kc-typo-label-lh: normal;
+    --kc-typo-label-ls: normal;
+
+    --kc-typo-body-ff: "Open Sans";
+    --kc-typo-body-fw: 450;
+    --kc-typo-body-fs: 14px;
+    --kc-typo-body-fy: normal;
+    --kc-typo-body-lh: normal;
+    --kc-typo-body-ls: normal;
+
+    --kc-typo-sub-ff: "Open Sans";
+    --kc-typo-sub-fw: 400;
+    --kc-typo-sub-fs: 10px;
+    --kc-typo-sub-fy: normal;
+    --kc-typo-sub-lh: normal;
+    --kc-typo-sub-ls: normal;
+
+    --kc-typo-btn-ff: "Open Sans";
+    --kc-typo-btn-fw: 500;
+    --kc-typo-btn-fs: 14px;
+    --kc-typo-btn-fy: normal;
+    --kc-typo-btn-lh: normal;
+    --kc-typo-btn-ls: normal;
+
+
+  }
+
+  .kc-typo__section-heading {
+    font-family: var(--kc-typo-section-heading-ff);
+    font-size: var(--kc-typo-section-heading-fs);
+    font-weight: var(--kc-typo-section-heading-fw);
+    font-style: var(--kc-typo-section-heading-fy);
+    line-height: var(--kc-typo-section-heading-lh);
+    letter-spacing: var(--kc-typo-section-heading-ls);
+    color: var(--kc-clr-typo-primary);
+  }
+
+  .kc-typo__label {
+    font-family: var(--kc-typo-label-ff);
+    font-size: var(--kc-typo-label-fs);
+    font-weight: var(--kc-typo-label-fw);
+    font-style: var(--kc-typo-label-fy);
+    line-height: var(--kc-typo-label-lh);
+    letter-spacing: var(--kc-typo-label-ls);
+    color: var(--kc-clr-typo-primary);
+  }
+
+  .kc-typo__body {
+    font-family: var(--kc-typo-body-ff);
+    font-size: var(--kc-typo-body-fs);
+    font-weight: var(--kc-typo-body-fw);
+    font-style: var(--kc-typo-body-fy);
+    line-height: var(--kc-typo-body-lh);
+    letter-spacing: var(--kc-typo-body-ls);
+    color: var(--kc-clr-typo-primary);
+  }
+
+  .kc-typo__sub {
+    font-family: var(--kc-typo-sub-ff);
+    font-size: var(--kc-typo-sub-fs);
+    font-weight: var(--kc-typo-sub-fw);
+    font-style: var(--kc-typo-sub-fy);
+    line-height: var(--kc-typo-sub-lh);
+    letter-spacing: var(--kc-typo-sub-ls);
+    color: var(--kc-clr-typo-primary);
+  }
+}

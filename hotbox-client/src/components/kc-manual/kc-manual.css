@@ -1,0 +1,37 @@
+@layer component {
+  @scope(kc-manual, section[is="kc-manual"]) {
+    :scope {
+      border: 1px solid var(--kc-clr-border-base);
+      padding: var(--kc-spacing-lg);
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--kc-radius-panel);
+      background-color: var(--kc-clr-surface-base-alt);
+    }
+
+    .kc-manual__mode {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 6px;
+    }
+
+    .kc-manual__profile-pane {
+      display: none;
+
+      &.kc-manual__profile-pane--selected {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .kc-manual__manual-pane {
+      display: none;
+
+      &.kc-manual__manual-pane--selected {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

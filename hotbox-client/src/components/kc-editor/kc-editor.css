@@ -1,0 +1,53 @@
+@layer component {
+  @scope (kc-editor, [is="kc-editor"]) {
+    :scope {
+      border: 1px solid;
+      margin-block: 10%;
+      width:600px;
+    }
+
+    .kc-editor__table {
+      display: grid;
+      grid-template-columns: 38px 3ch 9ch 1fr 1fr ;
+
+
+      .kc-editor__phase {
+         display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+
+        .kc-editor__table-header {
+          display: grid;
+          grid-template-columns: subgrid;
+          grid-column: 1 / -1;
+          list-style: none;
+          /* display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap; */
+          li {
+            font-size: var(--kc-typo-body-fs);
+            font-weight: var(--kc-typo-body-strong-fw);
+          }
+
+          .kc-editor__phase-label{
+             grid-column: 1 / -1;
+            font-size: var(--kc-typo-label-fs);
+            font-weight: var(--kc-typo-label-fw);
+          }
+        }
+
+        .kc-editor__profile-list {
+          grid-column: 1 / -1;
+             display: grid;
+          grid-template-columns: subgrid;
+          row-gap: 6px;
+        }
+      }
+
+
+    }
+    .kc-editor__save{
+      border:1px solid black;
+    }
+  }
+}

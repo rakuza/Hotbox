@@ -1,0 +1,69 @@
+@layer component {
+  @scope (kc-dashboard, section[is="kc-dashboard"]) {
+    :scope {
+      border: 1px solid var(--kc-clr-border-base);
+      padding: var(--kc-spacing-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: var(--kc-radius-panel);
+      background-color: var(--kc-clr-surface-base-alt);
+      max-height: 100%;
+      overflow-y: scroll;
+    }
+
+    .kc-dashboard__profile {
+      border: 1px solid var(--kc-clr-border-base);
+      border-radius: var(--kc-radius-panel);
+      border-spacing: 0;
+      overflow: clip;
+
+      tr {
+
+        th,
+        td {
+          &:nth-child(1) {
+            max-width: 4ch;
+          }
+        }
+      }
+
+      .kc-dashboard-profile__header {
+        background-color: var(--kc-clr-surface-brand);
+        color: var(--kc-clr-typo-inverse);
+
+        th {
+          padding-block: var(--kc-spacing-sm);
+          padding-inline: var(--kc-spacing-md);
+          text-align: left;
+        }
+      }
+    }
+
+    .kc-dashboard__steps {
+      .kc-dashboard__phase-label {
+        border-block: 1px solid var(--kc-clr-border-base);
+        padding-block: var(--kc-spacing-sm);
+        padding-inline: var(--kc-spacing-md);
+        background-color: var(--kc-clr-surface-base);
+      }
+
+      .kc-dashboard__step {
+        &:nth-of-type(2n) {
+          background-color: var(--kc-clr-surface-base);
+        }
+
+        td {
+          padding-block: var(--kc-spacing-sm);
+          padding-inline: var(--kc-spacing-md);
+          border-right: 1px solid var(--kc-clr-surface-base-alt);
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+  }
+}

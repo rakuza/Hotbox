@@ -1,0 +1,32 @@
+@layer component {
+    @scope (kc-editor-entry, [is="kc-editor-entry"]) {
+        :scope {
+          grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: subgrid;
+            width: 100%;
+            justify-content: space-between;
+            background-color: aliceblue;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 4px;
+        }
+
+        .kc-editor-entry__duration{
+            min-width: 7ch;
+        }
+
+        .kc-editor-entry__temperature{
+            min-width: 9ch;
+        }
+
+        .kc-editor-entry__drag{
+            cursor: grab;
+            clip-path: circle();
+            &:active{
+                cursor: grabbing;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+
+    --kc-clr-primative-white: #ffffff;
+    --kc-clr-primative-black: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+
+    --kc-typo-heading-fs: 16px;
+    --kc-typo-label-fw: 600;
+    --kc-typo-label-fs: 14px;
+    --kc-typo-body-fs: 12px;
+    --kc-typo-body-fw: 400;
+    --kc-typo-body-strong-fw: 500;
+    --kc-typo-sub-fs: 10px;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+}
+
+
+
+.kc-viewport{
+    background-color: var(--kc-clr-surface-base);
+    display: flex;
+    flex-direction: row;
+    padding:var(--kc-spacing-xl);
+    gap:var(--kc-spacing-xl);
+    flex-grow: 1;
+
+    .kc-viewport__c1,.kc-viewport__c2{
+        display: flex;
+        flex-direction: column;
+        gap:inherit
+    }
+
+    .kc-viewport__c1{
+        width:33%;
+    }
+
+    .kc-viewport__c2{
+        width: 77%;
+    }
+
+}

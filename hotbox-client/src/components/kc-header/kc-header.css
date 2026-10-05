@@ -1,0 +1,34 @@
+@layer component {
+  @scope (kc-header, header[is="kc-header"]) {
+    :scope {
+      display: flex;
+      flex-direction: column;
+      width: 175px;
+      padding: 10px;
+      background-color: var(--kc-clr-surface-brand);
+
+    }
+
+    .kc-header__logo {
+      margin-bottom: 10px;
+      height: 150px;
+      width: 150px;
+      background-color: var(--kc-clr-surface-brand-alt);
+      border-radius: var(--kc-radius-item);
+      padding: var(--kc-spacing-md);
+    }
+
+    .kc-header__heading {
+      font-size: 18px;
+      color: var(--kc-clr-typo-inverse);
+    }
+
+    p,p>span{
+      color:var(--kc-clr-typo-inverse);
+    }
+
+    .kc-header__version{
+      margin-top: auto;
+    }
+  }
+}

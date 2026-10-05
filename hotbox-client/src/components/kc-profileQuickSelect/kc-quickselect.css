@@ -1,0 +1,70 @@
+@layer component {
+  @scope (kc-quickselect, section[is="kc-quickselect"]) {
+    :scope {
+      border: 1px solid var(--kc-clr-border-base);
+      padding: var(--kc-spacing-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      background-color: var(--kc-clr-surface-base-alt);
+      border-radius: var(--kc-radius-panel);
+    }
+
+    .kc-quickselect__popover--trigger{
+      anchor-name: --kc-quick-select-popover;
+    }
+
+    .kc-quickselect__popover:popover-open{
+      
+      position-anchor: --kc-quick-select-popover;
+      position-area: center right; 
+      background-color: var(--kc-clr-surface-base-alt);
+      border: 1px solid var(--kc-clr-border-base);
+      border-radius: var(--kc-radius-panel);
+      padding: var(--kc-spacing-md);
+      display: flex;
+      flex-direction: column;
+      gap:var(--kc-spacing-md);
+    }
+
+    .kc-quickselect__entries {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: var(--kc-spacing-sm);
+
+      .kc-quickselect__option {
+        display: flex;
+        padding: var(--kc-spacing-sm);
+        border-radius: var(--kc-radius-item);
+        border: 1px solid #0003;
+        align-items: center;
+        gap:var(--kc-spacing-md);
+              @media(hover:hover){
+        &:hover{
+          background-color: var(--kc-clr-surface-base-hover);
+        }
+        &:active,&.kc-quickselect__option--selected{
+          background-color: var(--kc-clr-surface-base-active);
+        }
+      }
+
+
+        .kc-quickselect__more {
+          svg {
+            height: 1lh;
+            width: 1lh;
+          }
+        }
+
+        .kc-quickselect__open {
+          flex-grow: 1;
+        }
+
+
+      }
+    }
+  }
+}
